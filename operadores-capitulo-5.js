@@ -1,6 +1,12 @@
 /* questao 1 - explicação */
+// Pede ao usuário para digitar um número
+// Converte o valor digitado para número inteiro
+const numero = parseInt(prompt("Digite um número:"));
 
-
+// Verifica se o valor digitado nao é um número válido
+if (isNaN(numero)) {
+  // Caso o usuário tenha digitado algo inválido mostra uma mensagem de erro
+  console.log("Por favor, digite um número válido.");
   // Caso o usuário tenha digitado algo inválido mostra uma mensagem de erro
   console.log("Questão 1: Por favor, digite um número válido.");
 
