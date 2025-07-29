@@ -1,3 +1,10 @@
+/* grupo:
+José otavio luciano Sousa Chagas
+Ronalty Hauan
+Gabriel de Sousa 
+Jadson Carvalho
+Caua Santos*/
+
 /* questao 1 - explicação */
 // Pede ao usuário para digitar um número
 // Converte o valor digitado para número inteiro
