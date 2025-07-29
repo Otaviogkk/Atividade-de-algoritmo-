@@ -1,10 +1,6 @@
 /* questao 1 - explicação */
 
-// Converte o valor digitado para número inteiro
-const numero = parseInt(prompt("Questão 1: Digite um número:"));
 
-// Verifica se o valor digitado nao é um número válido
-if (isNaN(numero)) {
   // Caso o usuário tenha digitado algo inválido mostra uma mensagem de erro
   console.log("Questão 1: Por favor, digite um número válido.");
 
@@ -50,7 +46,7 @@ alert("Questão 2: O maior número é: " + maior); // Mostra o resultado em uma 
  /* Converte entrada2 para número e armazena na variável num2 */
   const num2 = Number(entrada2);
   /* Converte entrada3 para número e armazena na variável num3 */
-g
+
  
   const num3 = Number(entrada3);
  
