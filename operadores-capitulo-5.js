@@ -1,41 +1,130 @@
 /* questao 1 - explicação */
-const numero = parseInt(prompt("Digite um número:"));
 
+// Converte o valor digitado para número inteiro
+const numero = parseInt(prompt("Questão 1: Digite um número:"));
+
+// Verifica se o valor digitado nao é um número válido
 if (isNaN(numero)) {
+  // Caso o usuário tenha digitado algo inválido mostra uma mensagem de erro
   console.log("Questão 1: Por favor, digite um número válido.");
 
 } else if (numero % 2 === 0) {
+  // Se o número for divisível por 2 sem resto, é par
   console.log("Questão 1: O número é par.");
 
 } else {
-
+  // Se não for par, então é ímpar
   console.log("Questão 1: O número é ímpar.");
+}
+/* questao 2 - explicação */
+//Solicitar os números ao usuário
+let num4 = parseFloat(prompt("Digite o primeiro número:")); 
+let num5 = parseFloat(prompt("Digite o segundo número:"));
+let num6 = parseFloat(prompt("Digite o terceiro número:"));
 
+//  Qual número é o maior
+let maior; // Variável para armazenar o maior número
+
+if (num4 > num5 && num4 > num6) {
+    maior = num4; // Se num4 for maior que num5 e num6, ele é o maior
+} else if (num5 > num4 && num5 > num6) {
+    maior = num5; // Se num5 for maior que num4 e num6, ele é o maior
+} else {
+    maior = num6; // Caso, num6 é o maior
 }
 
+// mostra qual o maior
+console.log("Questão 2: O maior número é: " + maior); // Exibe o resultado no console
+alert("Questão 2: O maior número é: " + maior); // Mostra o resultado em uma janela de alerta
 
-/* questao 7 - explicaçãob */
+/* questao 3 - explicação */
+// ler o primeiro numero usando prompt()
+ const entrada1 = prompt('Questão 3: Digite o primeiro número:');
+  // Ler o segundo número usando o prompt()
+  const entrada2 = prompt('Questão 3: Digite o segundo número:');
+ // Ler o terceiro número usando o prompt()
+  const entrada3 = prompt('Questão 3: Digite o terceiro número:');
+
+ /* Converte entrada1 para número e armazena na variável num1 */
+ const num1 = Number(entrada1);
+ /* Converte entrada2 para número e armazena na variável num2 */
+  const num2 = Number(entrada2);
+  /* Converte entrada3 para número e armazena na variável num3 */
+
+ 
+  const num3 = Number(entrada3);
+ 
+  // Calcula a média e armazena na variável média
+  const media = (num1 + num2 + num3) / 3;
+ 
+  // Validar a média e exibir a mensagem correspondente
+  if (media >= 7) {
+
+ console.log("Questão 3: Aprovado");
+  } else if (media >=7 ) {
+
+ console.log("Questão 3: Recuperação");
+  } else {
+
+ console.log("Questão 3: Reprovado");
+  }
+
+/* questao 7 - explicação */
+// Pede ao usuário para digitar o valor dos três lados do triângulo
 let a = Number(prompt("Lado 1:"));
 let b = Number(prompt("Lado 2:"));
 let c = Number(prompt("Lado 3:"));
 
+// Verifica se os três lados podem formar um triângulo válido
+// a soma de dois lados deve ser maior que o terceiro
 if (a + b > c && a + c > b && b + c > a) {
 
+  // Se todos os lados forem iguais = Equilátero
   if (a === b && b === c) {
-
     console.log("Questão 7: Equilátero");
 
+  // Se apenas dois lados forem iguais = Isósceles
   } else if (a === b || a === c || b === c) {
-
     console.log("Questão 7: Isósceles");
 
+  // Se todos os lados forem diferentes = Escaleno
   } else {
-
     console.log("Questão 7: Escaleno");
-
   }
+
 } else {
+  // Se os lados não formarem um triângulo válido
   console.log("Questão 7: Inválido");
+}
+/* questao 8 - explicação*/
+//pede ao usuario para digitar o nome de um prato
+
+let prato = prompt("Questão 8: escolha pizza, hamburguer, salada ou macarrao"). toLowerCase ();
+
+//switch verifica o prato que foi escolhido
+switch (prato) { 
+    case "pizza" :
+        // se escolher pizza mostra essas informaçoes
+        console.log("Questão 8: pizza - RS$25 - Mussarela com borda");
+        break;
+
+    case "hamburguer" :
+        //se escolher hamburguer mostra isso
+        console.log("Questão 8: hamburguer - RS$20 - artesabal com fritas");
+        break;
+
+        case "salada" : 
+        //se escolher salada mostra isso
+        console.log("Questão 8: salada - RS$15 - fresca com legumes");
+        break;
+
+        case "macarrao" : 
+        // se escolher macarrao mostra isso
+        console.log("Questão 8: macarrao - RS$18 - com molho");
+        break;
+
+    default:
+        console.log("Questão 8: prato invalido");
 }
 
 /* questao 10 - explicação
