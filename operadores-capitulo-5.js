@@ -1,6 +1,11 @@
+/* grupo:
+José otavio luciano Sousa Chagas
+Ronalty Hauan
+Gabriel de Sousa 
+Jadson Carvalho
+Caua Santos*/
+
 /* questao 1 - explicação */
-
-
   // Caso o usuário tenha digitado algo inválido mostra uma mensagem de erro
   console.log("Questão 1: Por favor, digite um número válido.");
 
