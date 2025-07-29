@@ -50,7 +50,7 @@ alert("Questão 2: O maior número é: " + maior); // Mostra o resultado em uma 
  /* Converte entrada2 para número e armazena na variável num2 */
   const num2 = Number(entrada2);
   /* Converte entrada3 para número e armazena na variável num3 */
-
+g
  
   const num3 = Number(entrada3);
  
