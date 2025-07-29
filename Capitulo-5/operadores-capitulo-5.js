@@ -2,8 +2,9 @@
 José otavio luciano Sousa Chagas
 Ronalty Hauan
 Gabriel de Sousa 
-Jadson Carvalho
-Caua Santos*/
+Jadson Carvalho - Burro
+Caua Santos - Inuntil
+*/
 
 /* questao 1 - explicação */
 // Pede ao usuário para digitar um número
@@ -18,7 +19,8 @@ if (isNaN(numero)) {
   console.log("Questão 1: Por favor, digite um número válido.");
 
 } else if (numero % 2 === 0) {
-  // Se o número for divisível por 2 sem resto, é par
+  // Se o número for 
+  // divisível por 2 sem resto, é par
   console.log("Questão 1: O número é par.");
 
 } else {
@@ -45,6 +47,8 @@ if (num4 > num5 && num4 > num6) {
 // mostra qual o maior
 console.log("Questão 2: O maior número é: " + maior); // Exibe o resultado no console
 alert("Questão 2: O maior número é: " + maior); // Mostra o resultado em uma janela de alerta
+
+
 
 /* questao 3 - explicação */
 // ler o primeiro numero usando prompt()
@@ -77,6 +81,10 @@ alert("Questão 2: O maior número é: " + maior); // Mostra o resultado em uma 
 
  console.log("Questão 3: Reprovado");
   }
+
+
+
+
 
 /* questao 7 - explicação */
 // Pede ao usuário para digitar o valor dos três lados do triângulo
@@ -136,6 +144,43 @@ switch (prato) {
         console.log("Questão 8: prato invalido");
 }
 
+/*questao 9 - explicação
+*/
+
+  function calcularIMC() {
+    const peso = parseFloat(document.getElementById("peso").value);
+    const altura = parseFloat(document.getElementById("altura").value);
+
+    // Corrigido o if: faltavam operadores lógicos e parênteses
+    if (isNaN(peso) || isNaN(altura) || peso <= 0 || altura <= 0) {
+      document.getElementById("resultado").textContent = "Por favor, insira valores válidos.";
+      return;
+    }
+
+    const imc = peso / (altura * altura);
+    let classificacao = "";
+
+    if (imc < 18.5) {
+      classificacao = "Abaixo do peso";
+    } else if (imc < 24.9) {
+      classificacao = "Peso normal";
+    } else if (imc < 29.9) {
+      classificacao = "Sobrepeso";
+    } else if (imc < 34.9) {
+      classificacao = "Obesidade grau I";
+    } else if (imc < 39.9) {
+      classificacao = "Obesidade grau II";
+    } else {
+      classificacao = "Obesidade grau III (obesidade mórbida)";
+    }
+
+    // Corrigido o uso de template string com backticks (`) para interpolar variáveis
+    document.getElementById("Questão 9:resultado").innerHTML =
+      `Seu IMC é: <strong>${imc.toFixed(2)}</strong><br>Classificação: <strong>${classificacao}</strong>`;
+  }
+
+
+
 /* questao 10 - explicação
 a sulitação para utilizao laço while para percorrer um array que começar do número 0 e exibir apenas os números pares.
 foi feita a definir os possíveis números positivos dentro do array depois colocação de algumas variáveis para visualização como "Inicio" e "valor",
@@ -152,7 +197,11 @@ while (Inicio < numeros.length) {
 }
 console.log("Questão 10:",valor);
 
-/* questão 11 - explicação
+/* questão 11 - explicação */
+
+
+
+
 
 /* questão 12 - explicação
 um dia um aluno cansado de calcular fatorial na aulas do professor Wedson, 
