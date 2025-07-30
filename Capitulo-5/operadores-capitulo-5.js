@@ -3,7 +3,7 @@ José otavio luciano Sousa Chagas
 Ronalty Hauan
 Gabriel de Sousa 
 Jadson Carvalho - Burro
-Caua Santos - Inuntil
+Caua Santos - Inútil
 */
 
 /* questao 1 - explicação */
