@@ -146,38 +146,20 @@ switch (prato) {
 
 /*questao 9 - explicação
 */
+const peso = parseFloat(prompt("Digite seu peso (em kg):"));
+const altura = parseFloat(prompt("Digite sua altura(em cm):"));
+const imc = peso / (altura * altura);
 
-  function calcularIMC() {
-    const peso = parseFloat(document.getElementById("peso").value);
-    const altura = parseFloat(document.getElementById("altura").value);
+if (imc < 18.5) {
+  alert("Questão 9: Magreza");
+} else if (imc >= 18.5 && imc < 25) {
+  alert("Questão 9: Seu peso está normal");
+} else if (imc >= 25 && imc < 30) {
+  alert("Questão 9: Acima do peso");
+} else {
+  alert("Questão 9: Obesidade Mórbida");
+}
 
-    // Corrigido o if: faltavam operadores lógicos e parênteses
-    if (isNaN(peso) || isNaN(altura) || peso <= 0 || altura <= 0) {
-      document.getElementById("resultado").textContent = "Por favor, insira valores válidos.";
-      return;
-    }
-
-    const imc = peso / (altura * altura);
-    let classificacao = "";
-
-    if (imc < 18.5) {
-      classificacao = "Abaixo do peso";
-    } else if (imc < 24.9) {
-      classificacao = "Peso normal";
-    } else if (imc < 29.9) {
-      classificacao = "Sobrepeso";
-    } else if (imc < 34.9) {
-      classificacao = "Obesidade grau I";
-    } else if (imc < 39.9) {
-      classificacao = "Obesidade grau II";
-    } else {
-      classificacao = "Obesidade grau III (obesidade mórbida)";
-    }
-
-    // Corrigido o uso de template string com backticks (`) para interpolar variáveis
-    document.getElementById("Questão 9:resultado").innerHTML =
-      `Seu IMC é: <strong>${imc.toFixed(2)}</strong><br>Classificação: <strong>${classificacao}</strong>`;
-  }
 
 
 
@@ -197,10 +179,22 @@ while (Inicio < numeros.length) {
 }
 console.log("Questão 10:",valor);
 
-/* questão 11 - explicação */
-
-
-
+/* questão 11 - explicação 
+a sulitação para utilizao laço while para percorrer um array que começar do número 0 e exibir apenas os números ímpares.
+foi feita a definir os possíveis números positivos dentro do array depois colocação de algumas variáveis para visualização como "Inicio" e "valor",
+como uma condição separar-se os numero impares dos pares.*
+*/
+let numeros1 = [0,1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let valor1 = "";
+let Inicio1 = 0;
+while (Inicio1 < numeros1.length) {
+    const impares = numeros1[Inicio1];
+    if (impares % 2 !== 0) {
+        valor1 += impares + " ";
+    }
+    Inicio1++;
+}
+console.log("Questão 11:",valor1);
 
 
 /* questão 12 - explicação
