@@ -1,4 +1,5 @@
 Grupo de alunos:
-José Otávio Luciano Sousa Chagas
-Jadson Carvalho Silva
-Gabriel de Sousa Rodrigues
+José Otávio Luciano Sousa Chagas,
+Jadson Carvalho Silva,
+Gabriel de Sousa Rodrigues,
+Ronalty Hauan Gomes Galvão dos Santos
