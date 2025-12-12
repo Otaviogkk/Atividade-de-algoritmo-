@@ -1,17 +1,4 @@
-//Pesquise sobre o uso do CommonJS x Módulos JavaScript nos últimos 5 anos.
-
-//CommonJS (CJS)
-
-//É o formato padrão do Node.js até hoje (require / module.exports).
-//Ainda amplamente usado, principalmente em projetos antigos e servidores Node.
-//Muito presente em ferramentas como webpack, eslint, jest antigo, etc.
-
-//Modulos JavaScript (ESM)
-
-//Padrão oficial da linguagem JavaScript (import / export).
-//Nos últimos anos, tornou-se o padrão moderno.
-//Navegadores suportam nativamente.
-
-//Node.js adotou suporte total a partir da versão 14+.
-
-//A maioria das bibliotecas novas usa ESM.
+export function usoCommonJSvsESM(){
+  resposta = "CommonJS (CJS): Foi o formato padrão do Node.js por muitos anos, usando require e module.exports. Ainda é amplamente utilizado, principalmente em projetos antigos e sistemas que dependem de ferramentas como webpack, eslint e versões antigas do Jest. Apesar de menos comum em novos projetos, continua relevante devido ao grande legado existente.\n\nMódulos JavaScript (ESM): É o padrão oficial da linguagem JavaScript, utilizando import e export. Nos últimos 5 anos, tornou-se o formato moderno adotado pela comunidade. Navegadores oferecem suporte nativo e, desde o Node.js 14+, o Node passou a suportar ESM completamente. Atualmente, a maioria das novas bibliotecas e frameworks é escrita em ESM.";
+  return resposta;
+}
