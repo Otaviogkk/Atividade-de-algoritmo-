@@ -28,7 +28,14 @@ for (const cap of capitulos) {
 
   for (const arquivo of arquivos) {
     const caminho = `./${cap}/${arquivo}`;
-    await import(caminho);
+    const mod = await import(caminho);
+
+if (mod.default) {
+  // é CommonJS
+  console.log("📦 Módulo CommonJS carregado:", caminho);
+} else {
+  console.log("📦 Módulo ES carregado:", caminho);
+}
     console.log(`✅ Importado: ${caminho}`);
   }
 }
