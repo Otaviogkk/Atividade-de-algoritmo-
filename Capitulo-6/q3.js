@@ -1,4 +1,4 @@
-function calcularMedia(a, b, c) {
+export function calcularMedia(a, b, c) {
   let soma = a + b + c;
   let media = soma / 3;
   console.log("Questão 3: Média:", media.toFixed(2)); 

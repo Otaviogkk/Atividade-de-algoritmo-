@@ -6,7 +6,7 @@ const prompt = require('prompt-sync')(); // importa o prompt-sync
  * @param {string} dataNascimento - Data no formato 'AAAA-MM-DD'.
  * @returns {string}
  */
-function verificarMaioridade(dataNascimento) {
+export function verificarMaioridade(dataNascimento) {
   const hoje = new Date();
   const nascimento = new Date(dataNascimento);
 

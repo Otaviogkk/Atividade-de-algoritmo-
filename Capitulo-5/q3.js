@@ -1,4 +1,4 @@
-function numero(){
+export function numero(){
   let numeros = [];
   for (let i = 0; i < 3; i++) {
   let num = prompt("Digite os numero");

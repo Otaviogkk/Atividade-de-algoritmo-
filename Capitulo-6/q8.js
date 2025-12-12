@@ -1,4 +1,4 @@
-function bloco() {
+export function bloco() {
   if (true) {
     let x = "Sou do bloco";
     console.log(x);
